@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo yum update
-sudo yum install apache2 -y
+sudo apt update
+sudo apt install apache2 -y
 # Check if oxer.zip exists
 if [ -e oxer.zip ]; then
     echo "oxer.zip already exists. Skipping download."
@@ -12,5 +12,5 @@ fi
 sudo unzip -o oxer.zip   # -o flag to overwrite existing files
 sudo mv -f ./oxer-html /var/www/html/   # -f flag to force move even if destination exists
 
-sudo systemctl enable httpd
-sudo systemctl start httpd
+sudo systemctl enable apache2
+sudo systemctl start apache2

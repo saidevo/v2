@@ -11,8 +11,8 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'sudo chmod +x ./Project1/project.sh'
-                sh 'sh ./Project1/project.sh'
+                sh 'sudo cp -rf oxer-html /var/www/html',
+                
             }
         }
     }
