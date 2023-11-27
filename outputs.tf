@@ -1,3 +1,3 @@
 output "url" {
-  value = "http://${aws_instance.instance.public_ip}/oxer-html"
+  value = "http://${aws_instance.instance.public_ip}:8080"
 }

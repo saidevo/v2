@@ -15,4 +15,4 @@ instance_info = {
   instance_type = "t2.micro"
   name          = "Project1_EC2"
 }
-null = "8"
+null = "1"
