@@ -1,6 +1,4 @@
 FROM httpd:latest
 LABEL Author="Tejaswini"
 LABEL Project="oxer"
-ADD  /oxer.zip
-
-
+COPY ./oxer-html /usr/local/apache2/htdocs
