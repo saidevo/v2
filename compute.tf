@@ -30,13 +30,13 @@ resource "null_resource" "null" {
     type        = "ssh"
   }
   provisioner "file" {
-    source      = "jenkins.sh"
-    destination = "jenkins.sh"
+    source      = "project.sh"
+    destination = "project.sh"
   }
   provisioner "remote-exec" {
     inline = [
-      "sudo chmod +x jenkins.sh",
-      "sh ./jenkins.sh"
+      "sudo chmod +x project.sh",
+      "sh ./project.sh"
     ]
   }
   depends_on = [
