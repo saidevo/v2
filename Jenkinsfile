@@ -11,9 +11,8 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'sudo cp -rf oxer-html /var/www/html',
-                
+                sh 'sudo cp -rf oxer-html /var/www/html'
             }
-        }
+        }    
     }
 }
