@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo yum update
-sudo yum install httpd -y
+sudo yum install apache2 -y
 # Check if oxer.zip exists
 if [ -e oxer.zip ]; then
     echo "oxer.zip already exists. Skipping download."
