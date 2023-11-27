@@ -1,9 +1,11 @@
 pipeline {
     agent any
+    triggers {
+        pollSCM('* * * * *') 
+    }
     stages {
         stage('vcs') {
             steps {
-                // Use the GitHub token credential ID configured in Jenkins
                 git url: 'https://github.com/AJA1811/Project1.git', branch: 'main'
             }
         }
